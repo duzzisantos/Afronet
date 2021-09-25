@@ -518,3 +518,103 @@ label {
   .footer i{
       font-size: 18px;
   }
+
+
+/*CODE FOR AFRONET-PAY*/
+
+#hero-pay {
+    height: 950px;
+    background-color: rgba(67, 4, 103, 0.199);
+    width: 1350px;
+    margin-left: -9px;
+    /* bottom: 0;
+    z-index: 1; */
+    overflow: hidden;
+}
+
+#form-payment{
+    height: 1150px;
+    width: 1350px;
+    background-color: transparent;
+    /* margin-bottom: 150px; */
+    /* bottom: 0;
+    z-index: 1; */
+}
+.header-pay {
+    padding-top: 150px;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(89, 4, 138, 0.699);
+}
+
+#circle1, #circle2 {
+    height: 45px;
+    width: 100px;
+    padding-top: 7px;
+    text-align: center;
+    /* border: 5px solid rgba(89, 4, 138, 0.699); */
+    background-color: rgba(89, 4, 138, 0.699);
+    border-radius: 50px;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+#fieldset1, #fieldset2 {
+    height: 250px;
+    width: 500px;
+    display: block;
+    margin-left: 415px;
+    border-radius: 15px;
+    border: 1px solid whitesmoke;
+}
+
+fieldset {
+    margin-top: 25px;
+}
+
+hr {
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    width: 50%;
+}
+
+#pay-btn {
+    margin-left: 415px;
+    padding: 12px;
+    width: 120px;
+    border: transparent;
+    background-color: rgb(80, 4, 99);
+    margin-top: 15px;
+    border-radius: 50px;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+#form-payment input {
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+
+#form-payment select {
+    margin-left: 20px;
+    padding: 10px;
+    width: 420px;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+}
+
+#form-payment label {
+    margin-left: 20px;
+}
+
+#fieldset1 #mymethod, #fieldset1 #cardNumber, #fieldset1 #expiryDate, #fieldset1 #expiry, #fieldset1 #cvv, #fieldset1 #userCvv, #fieldset1 #apple-id, #fieldset1 #apple-pay {
+    display: none;
+}
+
+#fieldset2 #recipient-number, #fieldset2 #account-number, #fieldset2 #deliverMethod, #fieldset2 #delivery-select{
+    display: none;
+}
