@@ -90,8 +90,8 @@ window.onload = function () {
             deliveryMethod.style.display = 'none';
             deliverySelect.style.display = 'none';
             fieldset2.style.height = '250px';
-            heroPay.style.height = '950px';
-            formPay.style.height = '950px';
+            heroPay.style.height = '1200px';
+            formPay.style.height = '1200px';
         }
     }
 }
