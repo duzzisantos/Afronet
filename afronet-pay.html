@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="afronet.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Afronet</title>
+</head>
+
+<body>
+    <div id="hero-pay">
+        <nav class="nav-bar">
+            <a href="afronet.html" class="logo"><i class="fab fa-battle-net"></i>Afronet</i></a>
+            <div class="nav-content">
+                <a href="" id="nav-links">How it works</a>
+                <a href="" id="nav-links">Login</a>
+                <a href="" id="nav-links">Help</a>
+            </div>
+
+            <button id="signUp">Sign up</button>
+        </nav>
+        <h2 class="header-pay">Provide your transfer details</h2>
+        <hr>
+        <form action="" id="form-payment">
+            <fieldset id="fieldset1">
+                <legend>
+                    <div id="circle1">Sender's details</div>
+                </legend>
+                <label for="account-name">Account name:</label>
+                <input type="text" placeholder="Enter bank account name">
+                <label for="payment-method">Payment method:</label>
+                <select name="payment-method" id="payment-method" onchange="firstFieldset()">
+                    <option value="select">..Select</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="apple-pay">Apple pay</option>
+                    <option value="amex">American Express</option>
+                </select>
+
+                <!--USE THESE COMMENTED OUT IN THE DOM Manipulations-->
+                <label for="payment-method-id" id="mymethod">Enter card number:</label>
+                <input type="text" placeholder="Card number" id='cardNumber'>
+                <label for="expiry" id='expiryDate'>Expiry date:</label>
+                <input type="date" id="expiry">
+                <label for="cvv" id='cvv'>CVV:</label>
+                <input type="number" placeholder="Enter CVV" id="userCvv">
+                <label for="apple-id" id="apple-id">Apple ID:</label>
+                <input type="text" placeholder="Enter Apple ID" id="apple-pay">
+            </fieldset>
+
+            <fieldset id="fieldset2">
+                <legend>
+                    <div id="circle2">Recipient's details</div>
+                </legend>
+                <label for="recipient">Recipient:</label>
+                <input type="text" placeholder="Enter recipient's name">
+                <label for="recipient-bank">Recipient's bank:</label>
+                <select name="select-bank" id="user-bank" onchange="secondFieldSet()">
+                    <option value="select">..Select</option>
+                    <option value="Access Bank">Access Bank</option>
+                    <option value="Polaris Bank">Polaris Bank</option>
+                    <option value="Guaranty Trust Bank">Guaranty Trust Bank</option>
+                    <option value="Fidelity Bank">Fidelity Bank</option>
+                    <option value="Union Bank">Union Bank</option>
+                    <option value="UBA">UBA</option>
+                </select>
+
+                <!--USE THESE COMMENTED OUT IN THE DOM Manipulations-->
+                <label for="recipient-number" id="recipient-number">Account number:</label>
+                <input type="number" placeholder="Enter account number" id="account-number">
+                <label for="delivery-method" id='deliverMethod'>Delivery method:</label>
+                <select name="delivery-method" id="delivery-select">
+                    <option value="select">..Select</option>
+                    <option value="bank deposit">Bank deposit</option>
+                    <option value="cash pick-up">Cash pick-up</option>
+                    <option value="mobile money">Mobile money</option>
+                </select>
+            </fieldset>
+            <button id="pay-btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="afronet-pay.js"></script>
+
+</html>
